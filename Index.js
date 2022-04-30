@@ -11,9 +11,9 @@ const explorers = Reader.readJsonFile("explorers.json"); // esto regresa la list
 
 // Aplicación del ExplorerService sobre la lista de explorers
 
-// console.log(ExplorerService.filterByMission(explorers, "node"));
-// console.log(ExplorerService.getAmountOfExplorersByMission(explorers, "node").length);
-// console.log(ExplorerService.getExplorersUsernamesByMission(explorers, "node"));
+console.log(ExplorerService.filterByMission(explorers, "node"));
+console.log(ExplorerService.getAmountOfExplorersByMission(explorers, "node").length);
+console.log(ExplorerService.getExplorersUsernamesByMission(explorers, "node"));
 
 
 //FIZZ
