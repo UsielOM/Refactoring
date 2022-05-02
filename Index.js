@@ -1,5 +1,6 @@
 const Reader = require("./lib/utils/Reader");
 
+
 const ExplorerService = require("./lib/services/ExplorerService");
 const FizzbuzzService = require("./lib/services/FizzbuzzService");
 const ExplorerController = require("./lib/controllers/ExplorerController");
@@ -37,3 +38,11 @@ FizzbuzzService.applyValidationInExplorer(explorer5);
 
 const explorer15 = { name: "Explorer15", score: 15 };
 FizzbuzzService.applyValidationInExplorer(explorer15);
+
+
+const numer1 = { score: 15 };
+FizzbuzzService.applyValidationInNumber(numer1);
+
+FizzbuzzService.applyValidationInNumber(5);
+
+ExplorerController.applyValidationInNumber(5);
