@@ -2,18 +2,24 @@ const Reader = require("./lib/utils/Reader");
 
 const ExplorerService = require("./lib/services/ExplorerService");
 const FizzbuzzService = require("./lib/services/FizzbuzzService");
+const ExplorerController = require("./lib/controllers/ExplorerController");
 
 
 
 const explorers = Reader.readJsonFile("explorers.json"); // esto regresa la lista de explorers del archivo
 
+console.log(ExplorerController.getExplorersByMission("node"));
+
+console.log(ExplorerController.getExplorersUsernamesByMission("java"));
+
+console.log(ExplorerController.getExplorersAmonutByMission("java"));
 
 
 // Aplicación del ExplorerService sobre la lista de explorers
 
-console.log(ExplorerService.filterByMission(explorers, "node"));
-console.log(ExplorerService.getAmountOfExplorersByMission(explorers, "node").length);
-console.log(ExplorerService.getExplorersUsernamesByMission(explorers, "node"));
+// console.log(ExplorerService.filterByMission(explorers, "node"));
+// console.log(ExplorerService.getAmountOfExplorersByMission(explorers, "node").length);
+// console.log(ExplorerService.getExplorersUsernamesByMission(explorers, "node"));
 
 
 //FIZZ
